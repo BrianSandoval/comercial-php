@@ -301,6 +301,7 @@
 
         <script src="util/gentelella/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
         <script src="js/util.js"></script>
+        <script src="js/menu.js"></script>
 
     </body>
 </html>

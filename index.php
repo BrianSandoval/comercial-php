@@ -22,7 +22,7 @@
         <link href="util/gentelella/build/css/custom.min.css" rel="stylesheet">
         <link rel="icon" href="../imagenes/logousat-ConvertImage.ico">
 
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!--<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
     </head>
 
     <body class="login">
@@ -110,9 +110,8 @@
                 </div>
             </div>
         </div>
-
+        <script src="util/gentelella/jquery/dist/jquery.min.js"></script>
         <script src="js/index.js"></script>
         <!-- <script src="js/../js/jquery-3.1.1.js"></script> -->
-
     </body>
 </html>
