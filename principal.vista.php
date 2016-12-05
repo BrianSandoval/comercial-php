@@ -47,8 +47,8 @@
 
                         <!-- menu profile quick info -->
                         <div class="profile">
-                            <div class="profile_pic">
-                                foto
+                            <div class="profile_pic" id="foto-usuario">
+
                             </div>
                             <div class="profile_info">
                                 <span>Bienvenido,</span>
@@ -146,7 +146,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="">
                                     <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                        foto y nombre del usuario
+                                        <img id="foto-usuario"/><h1 id="nombre-usuario"></h1>
                                         <span class=" fa fa-angle-down"></span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-usermenu pull-right">
