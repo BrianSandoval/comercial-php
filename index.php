@@ -10,17 +10,19 @@
         <title>Iniciar Sesion</title>
 
         <!-- Bootstrap -->
-        <link href="../util/gentelella/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="util/gentelella/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome -->
-        <link href="../util/gentelella/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="util/gentelella/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- NProgress -->
-        <link href="..util/gentelella/nprogress/nprogress.css" rel="stylesheet">
+        <link href="util/gentelella/nprogress/nprogress.css" rel="stylesheet">
         <!-- Animate.css -->
-        <link href="../util/gentelella/animate.min.css" rel="stylesheet">
+        <link href="util/gentelella/animate.min.css" rel="stylesheet">
 
         <!-- Custom Theme Style -->
-        <link href="../util/gentelella/build/css/custom.min.css" rel="stylesheet">
+        <link href="util/gentelella/build/css/custom.min.css" rel="stylesheet">
         <link rel="icon" href="../imagenes/logousat-ConvertImage.ico">
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
 
     <body class="login">
@@ -31,16 +33,16 @@
             <div class="login_wrapper">
                 <div class="animate form login_form">
                     <section class="login_content">
-                        <form action="../controlador/Sesion.validar.controlador.php" method="post"> 
+                        <form id="frminicio" method="post"> 
                             <!-- get = mandar los datos por el url, visible-->
                             <!-- post = mandar los datos por el url, invisible, mas seguro-->
                             <h1>Iniciar Sesión</h1>
                             <div>
-                                <input name="txtEmail" type="email" class="form-control" placeholder="Usuario(email)" required="" autofocus="" />
+                                <input id="email" type="email" class="form-control" placeholder="Usuario(email)" required="" autofocus="" />
                                 <!--requiered = validar si la caja de texto esta en blanco-->
                             </div>
                             <div>
-                                <input name="txtClave" type="password" class="form-control" placeholder="Contraseña" required="" />
+                                <input id="password" type="password" class="form-control" placeholder="Contraseña" required="" />
                             </div>
 
                             <div>
@@ -64,7 +66,7 @@
 
                                 <div>
                                     <h1><i class="fa fa-paw"></i> BS </h1>
-                                    <p> <?php echo date('Y'); ?> All Rights Reserved.</p>
+                                    <p> All Rights Reserved.</p>
                                 </div>
                             </div>
                         </form>
@@ -79,13 +81,13 @@
                                 <input type="text" class="form-control" placeholder="Username" required="" />
                             </div>
                             <div>
-                                <input type="email" class="form-control" placeholder="Email" required="" />
+                                <input type="email" class="form-control"  placeholder="Email" required="" />
                             </div>
                             <div>
-                                <input type="password" class="form-control" placeholder="Password" required="" />
+                                <input type="password" class="form-control"  placeholder="Password" required="" />
                             </div>
                             <div>
-                                <a class="btn btn-default submit" href="index.html">Submit</a>
+                                <button type="submit">Submit</button>
                             </div>
 
                             <div class="clearfix"></div>
@@ -100,7 +102,7 @@
 
                                 <div>
                                     <h1><i class="fa fa-paw"></i> Bs!</h1>
-                                    <p>©<?php echo date('Y'); ?> Brian Sandoval. Privacy and Terms</p>
+                                    <p>© Brian Sandoval. Privacy and Terms</p>
                                 </div>
                             </div>
                         </form>
@@ -108,5 +110,9 @@
                 </div>
             </div>
         </div>
+
+        <script src="js/index.js"></script>
+        <!-- <script src="js/../js/jquery-3.1.1.js"></script> -->
+
     </body>
 </html>
