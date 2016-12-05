@@ -47,6 +47,8 @@ $("#frminicio").submit(function (evento) {
             } else {
                 alert(datosJSON[i].dato);
                 $("#email").val("");
+                $("#password").val("");
+                $("#email").focus();
             }
         }
     }).fail(function (error) {
