@@ -11,7 +11,7 @@ function menuArriba() {
         dato: misVariablesGet.dato
     }).done(function (resultado) {
         var datosJSON = resultado;
-        alert(datosJSON);
+//        alert(datosJSON);
         for (var item in datosJSON) {
             document.getElementById("foto-usuario").innerHTML = "<img style='max-width:70px;' src='" + ur + datosJSON[item].codigo_usuario + ".png'>";
             $("#nombre-usuario").text(datosJSON[item].usuario);
