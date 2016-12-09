@@ -48,6 +48,7 @@
                         <!-- menu profile quick info -->
                         <div class="profile">
                             <div class="profile_pic" id="foto-usuario">
+                                <img src="imagenes/1.png" alt="..." class="img-circle profile_img"/>
                             </div>
                             <div class="profile_info">
                                 <span>Bienvenido,</span>
